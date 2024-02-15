@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 4</title>
 </head>
+<body>
 <h1 style="color: black;">Homework 5</h1>
 <h1 style="color: black;">Chandler Lugo</h1>
 <h2 style="color: black;"> </h2>
 
-
-<script src = "myData.js">
-
+<button id="button">Click Me!</button>
+<script src = "myData.js"></script>
+<script>
+    function button() {
+        var myA= myData.features.map(e => e.geometry.coordinates[0]); console.log(myA);}
+    document.getElementById('button').addEventListener('click', button);
 </script>
 
+<h3 style="color: black;">Click on the button!</h3>
 
+
+
+</body>
 </html>
